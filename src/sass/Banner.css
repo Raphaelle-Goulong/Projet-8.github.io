@@ -1,0 +1,22 @@
+.Banner .main-container {
+  margin: 0 90px 50px 90px;
+  background-color: #f66c6c;
+  background-image: url("../assets/IMG.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+.Banner .main-container .img-home {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Banner .main-container .img-home .text-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2.5em;
+}/*# sourceMappingURL=Banner.css.map */

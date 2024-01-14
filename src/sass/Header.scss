@@ -1,0 +1,51 @@
+
+.Nav-container{
+    padding: 30px 90px 0 90px;
+
+    .navbar{
+        display: flex;
+        
+        justify-content : space-between;
+        margin-bottom: 50px;
+        
+        //  background-color: ORANGE;
+            @media (min-width: 320px) {
+                    width: 100%;  
+                }
+        // background-color: blueviolet;
+        &__Kasa-logo{
+            width: 10%;
+                @media (min-width: 320px) and (max-width: 768px) {
+                    width: 41%;  
+                }
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    width: 15%;  
+                }
+        }
+            &__links-nav{
+                display: flex;
+                margin: 10px 0px 10px 10px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.2em;
+
+                    .link-nav{
+                        width: 150px;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        color: #f66c6c;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration:underline;
+                        }
+                        // background-color: gray;
+                        @media (max-width: 768px) {
+                            // width: 100px;
+                            font-size: 0.9em;
+                        }
+                    }
+                // background-color: aquamarine;
+            }
+    
+    }
+}

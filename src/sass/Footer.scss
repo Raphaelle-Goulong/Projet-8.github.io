@@ -1,0 +1,25 @@
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+
+    &__KasaLogo-Ft{
+        margin-bottom: 10px;
+    }
+        &__Texte{
+            // width: 100%;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+    
+    
+}
