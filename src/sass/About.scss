@@ -1,0 +1,35 @@
+
+.selection-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    .options-selects{
+        width: 80%;
+        height: 50px;
+        margin: 5px 100px 50px 100px;
+        background-color: #f66c6c;
+        color: white;
+        border-radius: 5px;
+        font-size: 1.5em;
+        padding: 10px;
+        border-color: transparent;
+        //pour enlever la flèche de la tcheck list
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        //pour enlever la flèche de la tcheck list fin
+
+        @media (min-width: 320px)and (max-width: 768px) {
+            margin: 10px 10px 20px 10px;
+            padding: 0px; 
+            width: 100%;
+        }
+        option{
+            background-color: white;
+            color: black;
+        }
+        
+    }
+}

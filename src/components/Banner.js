@@ -10,7 +10,6 @@ function Banner() {
                         <p className="text-banner">Chez vous, partout et ailleurs</p>
                     </div>
                 </main>
-
             </header>
 }
 

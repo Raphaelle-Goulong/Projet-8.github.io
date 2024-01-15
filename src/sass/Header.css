@@ -1,22 +1,25 @@
 .Nav-container {
-  padding: 30px 90px 0 90px;
+  margin: 20px 100px 0 100px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Nav-container {
+    width: 100%;
+    margin: 20px 0px 30px 0px;
+  }
 }
 .Nav-container .navbar {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
-}
-@media (min-width: 320px) {
-  .Nav-container .navbar {
-    width: 100%;
-  }
+  width: 100%;
 }
 .Nav-container .navbar__Kasa-logo {
   width: 10%;
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .Nav-container .navbar__Kasa-logo {
-    width: 41%;
+    width: 30%;
+    padding: 5px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -26,12 +29,18 @@
 }
 .Nav-container .navbar__links-nav {
   display: flex;
-  margin: 10px 0px 10px 10px;
+  width: 230px;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .Nav-container .navbar__links-nav {
+    width: 180px;
+  }
+}
 .Nav-container .navbar__links-nav .link-nav {
-  width: 150px;
+  margin-left: 20px;
+  margin-right: 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -41,8 +50,10 @@
 .Nav-container .navbar__links-nav .link-nav:hover {
   text-decoration: underline;
 }
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .Nav-container .navbar__links-nav .link-nav {
-    font-size: 0.9em;
+    width: 200px;
+    font-size: 1em;
+    margin: 0;
   }
 }/*# sourceMappingURL=Header.css.map */

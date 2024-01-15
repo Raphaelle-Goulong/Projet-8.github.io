@@ -1,10 +1,25 @@
+@media (min-width: 320px) and (max-width: 768px) {
+  .Banner {
+    padding: 10px;
+  }
+}
 .Banner .main-container {
-  margin: 0 90px 50px 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 100px 50px 100px;
   background-color: #f66c6c;
   background-image: url("../assets/IMG.png");
   background-size: cover;
   background-position: center;
   border-radius: 15px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Banner .main-container {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+  }
 }
 .Banner .main-container .img-home {
   width: 100%;
@@ -19,4 +34,11 @@
   align-items: center;
   color: white;
   font-size: 2.5em;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .Banner .main-container .img-home .text-banner {
+    font-size: 1.8em;
+    padding: 30px;
+    justify-content: flex-start;
+  }
 }/*# sourceMappingURL=Banner.css.map */
