@@ -24,39 +24,46 @@
                     width: 15%;  
                 }
         }
-            &__links-nav{
-                display: flex;
-                width: 230px;
-                font-family: 'Montserrat', sans-serif;
-                font-size: 1.2em;
-                // background-color: burlywood;
-                @media (min-width: 320px)and (max-width: 768px) {
-                    width: 180px;
-                    
-                }
-                    
-                .link-nav{
-                    margin-left: 20px;
-                    margin-right: 20px;
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-                    color: #f66c6c;
-                    text-decoration: none;
-                        &:hover{
-                            text-decoration:underline;
-                        }
-                        // background-color: gray;
-                        
-                         @media (min-width: 320px)and (max-width: 768px) {
-                            width: 200px;
-                            font-size: 1.0em;
-                            margin: 0;
-                            
-                        }
-                    }
-                // background-color: aquamarine;
+        
+        &__links-nav{
+            display: flex;
+            width: 235px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2em;
+
+            &:active{
+                font-weight: bold; 
+                text-decoration: underline;
             }
+            
+            @media (min-width: 320px)and (max-width: 768px) {
+                width: 180px;    
+            }
+                    
+            .navLink{
+                margin-left: 20px;
+                margin-right: 20px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                color: #f66c6c;
+                text-decoration: none;
+                        // &:hover{
+                        //     text-decoration:underline;
+                        // }
+                    &.active{  
+                        text-decoration: underline;
+                    }
+
+                    @media (min-width: 320px)and (max-width: 768px) {
+                        width: 200px;
+                        font-size: 1.0em;
+                        margin: 0;
+                            
+                    }
+            }
+                
+        }
     
     }
 }

@@ -8,50 +8,21 @@
     height: auto;
     margin: 50px 100px 50px 100px;
     padding: 30px;
-    // background-color: green;
+    flex-wrap: wrap;
+
     @media (min-width: 320px)and (max-width: 768px) {
         margin: 0px;
         padding: 0px; 
         background-color: transparent;
     }
+
     &__aparts{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         width: 100%;
-        // background-color: aqua;
-        .article-apart{
-            width: 29%;
-            height: 400px;
-            background-color: #f66c6c;
-            border-radius: 15px;
-            margin: 20px;
-            color: white;
-            @media (min-width: 320px)and (max-width: 768px) {
-                width: 100%;
-                height: 250px;
-            }
-
-            .img-apart{
-                width: 100%;
-                height: 100%;
-                border-radius: 15px;
-            }
-            .text-apart{
-                display: flex;
-                position: relative;
-                bottom: 100px;
-                margin: 20px;
-                font-size: 1.3em;
-                // background-color: green;
-                width: 60%;
-                @media (min-width: 320px)and (max-width: 768px) {
-                    top: 180px; 
-                    width: 70%;  
-                }
-            }
-        }
+        
         
     }
 }

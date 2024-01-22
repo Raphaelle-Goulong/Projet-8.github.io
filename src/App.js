@@ -7,7 +7,12 @@ import Footer from './components/Footer'
 import data from './data.json'
 import Home from './pages/Home'
 import About from './pages/About'
+import Error from './pages/Error'
 import Header from './components/Header'
+import Appartement from './pages/Appartement'
+import Slideshow from './components/Slideshow'
+import Collapse from './components/Collapse'
+import Cards from './components/Cards'
 
 function App() {
   console.log(data)
@@ -19,6 +24,8 @@ function App() {
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/appartement" element={<Appartement />} />
+          <Route path="*" element={<Error />} />
         </Routes>
     
       <Footer />

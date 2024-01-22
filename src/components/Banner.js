@@ -3,14 +3,18 @@ import IMG from '../assets/IMG.png'
 
 
 
-function Banner() {
+function Banner({ title,image  }) {
     return <header className="Banner">
-                <main className="main-container">
+                <div className="main-container">
                     <div className="img-home">
-                        <img src={IMG} alt="Banner Images" className="banner-img" />
-                        <p className="text-banner">Chez vous, partout et ailleurs</p>
+                        {/* /* condition */ }
+                        {/* <li className="item">
+                            {isPacked ? name + ' ✔' : name}
+                        </li> */}
+                        <img src={image} alt="Banner Images" className="banner-img" />
+                        <p className="text-banner">{title}</p>
                     </div>
-                </main>
+                </div>
             </header>
 }
 

@@ -1,26 +1,24 @@
 import IMG from '../assets/IMG.png'
 import '../sass/Home.scss'
 import Banner from '../components/Banner'
+import Cards from '../components/Cards'
 import data from '../data.json'
+// import { Link } from 'react-router-dom'
+
 
 function Home() {
     return (
         <>
-            <Banner />
-            <main className="container">
-                <section className="container__aparts">
-                    {data.map((item, index) => (
-                        <article key={index} className="article-apart">
-                            <img src={item.cover} alt="Images appartements" className="img-apart"/>
-                            <p className="text-apart">{item.title} - Titre de la location</p>
-                        </article>
-                    ))}
-                    
-
-                    
-                </section>
-                
-            </main>
+            <Banner title='Chez vous, partout et ailleurs' image={IMG}/>
+                <main className="container">
+                    <section className="container__aparts">
+                        {/* {data.map((item, index) => ( */}
+                            
+                            <Cards />
+                            
+                        {/* ))} */}
+                    </section>
+                </main>
         </>
     )
     
