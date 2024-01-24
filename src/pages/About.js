@@ -1,24 +1,21 @@
 import imgAbout from '../assets/imgAbout.png'
 import '../sass/About.scss'
 import Banner from '../components/Banner'
+import Collapse from '../components/Collapse'
 
 function About() {
     return (
         <>
-            <Banner image={imgAbout } />
+            <Banner image={imgAbout} />
+
             <section className="selection-options">
-                <select className="options-selects">
-                    <option value="" key="">Test</option>
-                    <option value="" key="">Test2</option>
-                    <option value="" key="">Test3</option>
-                    <option value="" key="">Test4</option>
-                </select>
+                <Collapse />
+                <Collapse />
+                <Collapse />
+                <Collapse />
             </section>
-            
-            
         </>
     )
-    
 }
 
 export default About

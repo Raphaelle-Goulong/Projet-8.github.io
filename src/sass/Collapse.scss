@@ -1,0 +1,51 @@
+
+    .collapse{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        height: 50px;
+        margin-top: 30px ;
+        background-color: #f66c6c;
+        color: white;
+        border-radius: 5px;
+        font-size: 1.5em;
+        padding: 10px;
+        border-color: transparent;
+        
+        @media (min-width: 320px)and (max-width: 768px) {
+            // margin: 10px 0px 20px 0px;
+            padding: 0px; 
+            width: 90%;
+        }
+        
+        .text-Collapse{
+            display: flex; 
+        }
+        .arrows-Collapse{
+            display: flex;
+
+        }
+
+    }
+
+    .toggle-collapse{
+        align-items: center;
+        flex-direction: column;
+        background-color: #f6f6f6;
+        width: 80%;
+        @media (min-width: 320px)and (max-width: 768px) {    
+            width: 90%;
+        }
+        
+        .toggle-collapse-text{
+            margin: 20px;
+            color:#f66c6c ;
+        }
+    }
+    .hide{
+        display: none;
+    }
+    .show{
+        display:flex;
+    }

@@ -1,0 +1,37 @@
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 400px;
+    background-color: #f66c6c;
+    border-radius: 15px;
+    margin: 50px;
+    // .imgAprt-carousel{
+
+    // }
+    .Arrow-left-carousel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        background-color: blue;
+        position: absolute;
+        left: 200px;
+    }
+    .Arrow-right-carousel{
+        position: absolute;
+        background-color: green;
+        right: 200px;
+        // top: ;
+
+    }
+    .text-carousel{
+        display: flex;
+        justify-content: center;
+        background-color: violet;
+        color: white;
+        position: relative;
+        top: 160px;
+    }
+}
