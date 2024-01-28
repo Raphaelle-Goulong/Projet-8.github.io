@@ -1,6 +1,84 @@
-.Container-carousel{
+.container-carousel {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-wrap: wrap;
+
+    .container-apart {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 80%;
+        .location-apart {
+            color: #f66c6c;
+
+            width: 80%;
+
+            .title-apart {
+                font-size: 2.5em;
+                margin-bottom: 10px;
+            }
+            .text-apart {
+                margin-bottom: 10px;
+                font-size: 1.2em;
+            }
+        }
+        .container-profil {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            .profil-apart {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                .title-profil {
+                    color: #f66c6c;
+                    width: 100px;
+                    padding: 10px;
+                    text-align: end;
+                }
+                .profil-picture {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 30px;
+                    background-color: #c4c4c4;
+                    .picture{
+                        width: 60px;
+                    height: 60px;
+                    border-radius: 30px;
+                    object-fit: cover;
+                    }
+                }
+            }
+            .container-star {
+                margin: 10px;
+                display: flex;
+                justify-content: flex-end;
+                .star-icon {
+                    margin: 5px;
+                }
+                &:hover{
+                    color: #f66c6c;
+                }
+            }
+        }
+        .button-apart {
+            width: 30%;
+            .btn-tag {
+                margin: 10px 15px 0px 0px;
+                background-color: #f66c6c;
+                color: white;
+                border: #f66c6c;
+                border-radius: 10px;
+                width: 120px;
+                height: 30px;
+            }
+        }
+        .collapse-container{
+            display: flex;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
 }

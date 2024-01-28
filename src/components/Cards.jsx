@@ -1,5 +1,6 @@
 import '../sass/Cards.scss'
 import data from '../data.json'
+
 import { Link } from 'react-router-dom'
 
 function Cards() {

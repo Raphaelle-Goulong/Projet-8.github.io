@@ -3,25 +3,32 @@
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 400px;
+    height: 500px;
     background-color: #f66c6c;
     border-radius: 15px;
     margin: 50px;
-    // .imgAprt-carousel{
+    .imgAprt-carousel{
+        width: 100%;
+        // width: 80%;
+        height: 500px;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
 
-    // }
+    }
     .Arrow-left-carousel{
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 10px;
-        background-color: blue;
+        // background-color: blue;
         position: absolute;
         left: 200px;
     }
     .Arrow-right-carousel{
         position: absolute;
-        background-color: green;
+        // background-color: green;
         right: 200px;
         // top: ;
 
@@ -29,9 +36,14 @@
     .text-carousel{
         display: flex;
         justify-content: center;
-        background-color: violet;
+        // background-color: violet;
         color: white;
-        position: relative;
-        top: 160px;
+        position: absolute;
+        // background-color: red;
+        bottom: 300px;
+        // right: 1000px;
+        // bottom: 20px;
+        
+        
     }
 }
