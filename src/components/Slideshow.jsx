@@ -1,26 +1,25 @@
-import imgAbout from '../assets/imgAbout.png'
 import React, { useState } from 'react'
 import '../sass/Slideshow.scss'
 import arrowLeft from '../assets/arrowLeft.png'
 import arrowRight from '../assets/arrowRight.png'
-import data from '../data.json'
 
-function Slideshow() {
+
+function Slideshow({pictures}) {
     const [currentSlide, setCurrentSlide] = useState(0)
     // pour que la  slide qui suit
     const goToNextSlide = () => {
-        setCurrentSlide((prevSlide) => (prevSlide === data.length - 1 ? 0 : prevSlide + 1))
+        setCurrentSlide((prevSlide) => (prevSlide === pictures.length - 1 ? 0 : prevSlide + 1))
     }
     // pour que la  slide qui précedente
     const goToPreviousSlide = () => {
-        setCurrentSlide((prevSlide) => (prevSlide === 0 ? data.length - 1 : prevSlide - 1))
+        setCurrentSlide((prevSlide) => (prevSlide === 0 ? pictures.length - 1 : prevSlide - 1))
     }
 
     return (
         <>
             <div className="carousel">
                 <>
-                    <img src={data[currentSlide].pictures} alt="Image du carrousel" className="imgAprt-carousel"  />
+                    <img src={pictures[currentSlide]} alt="" className="imgAprt-carousel"  />
                     
                 </>
 
@@ -37,7 +36,7 @@ function Slideshow() {
                     onClick={goToNextSlide}
                 />
                 <p className="text-carousel">
-                    {currentSlide + 1}/{data.length}
+                    {currentSlide + 1}/{pictures.length}
                 </p>
             </div>
         </>

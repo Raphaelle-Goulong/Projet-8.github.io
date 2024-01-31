@@ -1,26 +1,37 @@
-import '../sass/Appartement.scss'
+import { useParams } from 'react-router-dom'
 import React, { useState, useEffect } from 'react'
+import '../sass/Appartement.scss'
 import data from '../data.json'
 import Star from '../assets/Star.svg'
 import Slideshow from '../components/Slideshow'
 import Collapse from '../components/Collapse'
 
-function Appartement({ id }) {
+
+function Appartement() {
+    const { id } = useParams()
     const [title, setTitle] = useState('')
     const [name, setName] = useState('')
+    const [pictures, setPictures] = useState('')
     const [picture, setPicture] = useState('')
     const [location, setLocation] = useState('')
+    const [description, setDescription] = useState('')
+    const [equipments, setEquipments] = useState('')
     const [tags, setTags] = useState([])
-    // const [rating, setRating] = useState('');
+    const [rating, setRating] = useState([]);
+    const range = [1,2,3,4,5]
 
     useEffect(() => {
         const apartment = data.find((item) => item.id === id)
         if (apartment) {
             setTitle(apartment.title)
             setName(apartment.name)
-            setPicture(apartment.picture)
+            setPicture(apartment.host.picture)
+            setPictures(apartment.pictures)
             setLocation(apartment.location)
             setTags(apartment.tags)
+            setDescription(apartment.description)
+            setEquipments(apartment.equipments)
+
             // setRating(apartment.rating);
         } else {
             setTitle('Appartement non trouvé')
@@ -31,11 +42,11 @@ function Appartement({ id }) {
             // setRating("note non trouvé")
         }
     }, [id])
-
+    const stars = rating.length;
     return (
         <>
             <div className="container-carousel">
-                <Slideshow />
+                <Slideshow pictures={pictures} />
 
                 <div className="container-apart">
                     <div className="location-apart">
@@ -45,12 +56,15 @@ function Appartement({ id }) {
                     <div className="container-profil">
                         <div className="profil-apart">
                             <h2 className="title-profil">{name}</h2>
+                            
                             <div className="profil-picture">
-                                <img src={picture} alt="Photo de profil" className="picture" />
+                                <img src={picture} alt="Profil" className="picture" />
                             </div>
                         </div>
                         <div className="container-star">
-                            <img src={Star} alt="Note" className="star-icon" />
+                        {range.map((rangeElem) =>
+                           rating >= rangeElem ? <img src={Star} alt="Note" className="star-icon" />: null
+                        )}
                             <img src={Star} alt="Note" className="star-icon" />
                             <img src={Star} alt="Note" className="star-icon" />
                             <img src={Star} alt="Note" className="star-icon" />
@@ -58,15 +72,19 @@ function Appartement({ id }) {
                         </div>
                     </div>
                     <div className="button-apart">
-                        {/* {data.map((item, index) => ( */}
-                            <button className="btn-tag" >
-                                {/* {item.tag} key={index}*/}
-                            </button>
-                        {/* // ))} */}
+                        {tags.map((item, index) => (
+                            <span className="btn-tag" key={index}>
+                                {item}
+                            </span>
+                        ))}
                     </div>
                     <div className="collapse-container">
-                        <Collapse />
-                        <Collapse />
+                        <div className="col-50">
+                            <Collapse title="Description" description={description} />
+                        </div>
+                        <div className="col-50">
+                            <Collapse title="Equipments" equipments={equipments} />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -12,11 +12,7 @@ function Home() {
             <Banner title='Chez vous, partout et ailleurs' image={IMG}/>
                 <main className="container">
                     <section className="container__aparts">
-                        {/* {data.map((item, index) => ( */}
-                            
                             <Cards />
-                            
-                        {/* ))} */}
                     </section>
                 </main>
         </>
