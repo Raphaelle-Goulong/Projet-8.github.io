@@ -6,6 +6,7 @@
     // height: 500px;
     // background-color: #f66c6c;
     border-radius: 15px;
+    position: relative;
     margin: 50px;
     @media (min-width: 320px)and (max-width: 768px) {
         // height: 400px;  
@@ -35,12 +36,11 @@
         display: none;
     }
     .Arrow-left-carousel{
-        
         justify-content: center;
         align-items: center;
         margin: 10px;
         position: absolute;
-        left: 200px;
+        left: 20px;
         @media (min-width: 320px)and (max-width: 768px) {
         left: 15px; 
         width: 5%;  
@@ -48,12 +48,12 @@
     }
     .Arrow-right-carousel{
         position: absolute;
-        right: 200px;
+        right: 20px;
         
         @media (min-width: 320px)and (max-width: 768px) {
-            right: 20px;  
+            right: 15px;  
             width: 5%; 
-            }
+        }
 
     }
     .text-carousel{
@@ -61,11 +61,11 @@
         justify-content: center;
         color: white;
         position: absolute;
-        bottom: 300px;
+        bottom: 50px;
         @media (min-width: 320px)and (max-width: 768px) {
             // position: absolute;
             bottom: 0px;
-            top: 530px;
+            // top: 530px;
             height: 20px;
             background-color: red;
             display: none;
