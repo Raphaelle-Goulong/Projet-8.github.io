@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     @media (min-width: 320px) and (max-width: 768px) {
         display: flex;
+        justify-content: center;
         width: 100%;
     }
     .container-apart {
@@ -18,9 +19,12 @@
         }
         .location-apart {
             color: #f66c6c;
-            width: 80%;
+            width: 70%;
             @media (min-width: 320px) and (max-width: 768px) {
                 padding: 10px;
+            }
+            @media (min-width: 768px) and (max-width: 1024px) {
+                width: 70%;
             }
             .title-apart {
                 font-size: 2.5em;
@@ -41,16 +45,26 @@
         .container-profil {
             display: flex;
             justify-content: flex-end;
+            width: 30%;
             flex-direction: column;
+            
             @media (min-width: 320px) and (max-width: 768px) {
                 width: 100%;
                 padding: 10px;
                 flex-direction: row-reverse;
-                order: 2;
+                // order: 2;
             }
+            @media (min-width: 768px) and (max-width: 1024px) {
+                width: 24%;
+                height: auto;
+                flex-direction:column;
+                
+                
+            }
+            
             .profil-apart {
                 display: flex;
-                justify-content: center;
+                justify-content: flex-end;
                 align-items: center;
                 width: 100%;
                 .title-profil {
@@ -61,7 +75,15 @@
                     @media (min-width: 320px) and (max-width: 768px) {
                         width: 100%;
                         padding: 0;
-                        font-size: 1.5em;
+                        font-size: 0.9em;
+                        word-spacing: 100vw;
+                        margin-right: 10px;
+                    }
+                    @media (min-width: 768px) and (max-width: 1024px) {
+                        width: 100%;
+                        padding: 0;
+                        font-size: 0.9em;
+                        
                     }
                 }
                 .profil-picture {
@@ -81,19 +103,20 @@
                 margin: 10px;
                 display: flex;
                 justify-content: flex-end;
+                 
                 @media (min-width: 320px) and (max-width: 768px) {
                     margin: 0;
                 }
                 .star-icon {
                     margin: 5px;
-                    @media (min-width: 320px) and (max-width: 768px) {
+                    width: 25px;
+                    @media (min-width: 320px) and (max-width: 1024px) {
                         margin: 2px;
                         width: 20px;
                     }
+                   
                 }
-                .star-icon.colored {
-                    color: #f66c6c;
-                }
+                
             }
         }
         .button-apart {
@@ -101,9 +124,10 @@
             display: flex;
             @media (min-width: 320px) and (max-width: 768px) {
                 width: 100%;
+                // justify-content: center;
                 align-items: center;
                 flex-wrap: wrap;
-                order: 1;
+                // order: 1;
             }
             .btn-tag {
                 width: 10%;
@@ -118,11 +142,12 @@
                 padding: 10px;
                 height: 15px;
                 @media (min-width: 320px) and (max-width: 768px) {
-                    width: 120px;
-                    height: 15px;
+                    width: 115px;
+                    height: 5px;
                     font-size: 0.7em;
                     margin: 5px;
                     padding: auto;
+                    border-radius: 10px;
                 }
             }
         }
@@ -135,9 +160,8 @@
             gap: 30px;
             @media (min-width: 320px) and (max-width: 768px) {
                 flex-direction: column;
-                // padding: 10px;
                 width: 100%;
-                order: 3;
+                // order: 3;
                 margin: 10px 0 10px 0;
                 padding: 10px;
             }
@@ -145,6 +169,9 @@
                 width: 50%;
                 @media (min-width: 320px) and (max-width: 768px) {
                     width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
                 }
             }
         }

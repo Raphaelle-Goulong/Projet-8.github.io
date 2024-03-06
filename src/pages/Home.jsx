@@ -2,22 +2,23 @@ import IMG from '../assets/IMG.png'
 import '../sass/Home.scss'
 import Banner from '../components/Banner'
 import Cards from '../components/Cards'
-import data from '../data.json'
-// import { Link } from 'react-router-dom'
-
 
 function Home() {
     return (
         <>
-            <Banner title='Chez vous, partout et ailleurs' image={IMG}/>
-                <main className="container">
-                    <section className="container__aparts">
-                            <Cards />
-                    </section>
-                </main>
+        {/* Utilisation du composant Banner avec un titre et une image */}
+            <Banner title="Chez vous, partout et ailleurs" image={IMG} />
+            {/* Conteneur principal de la page d'accueil */}
+            <main className="container">
+                {/* Section contenant les cartes d'appartements */}
+                <section className="container__aparts">
+                     {/* Utilisation du composant Cards */}
+                    <Cards />
+                </section>
+            </main>
         </>
     )
-    
 }
 
+// Exportation du composant Home
 export default Home

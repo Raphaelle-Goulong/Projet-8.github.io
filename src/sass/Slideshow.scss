@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 500px;
+    // height: 500px;
     // background-color: #f66c6c;
     border-radius: 15px;
     margin: 50px;
@@ -28,8 +28,14 @@
             
         }
     }
-    .Arrow-left-carousel{
+    .show-Arrow{
         display: flex;
+    }
+    .hide-Arrow{
+        display: none;
+    }
+    .Arrow-left-carousel{
+        
         justify-content: center;
         align-items: center;
         margin: 10px;
